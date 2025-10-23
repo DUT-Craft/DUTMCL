@@ -12,9 +12,17 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  css: ['~/assets/css/main.css'],
   devServer: {host:'localhost'},
   modules: [
-    'nuxtjs-naive-ui'
+      'nuxtjs-naive-ui',
+      '@nuxtjs/tailwindcss'
   ],
   vite: {
     clearScreen: false,
@@ -44,9 +52,4 @@ export default defineNuxtConfig({
   build: {
     transpile: ['naive-ui', "vueuc"]
   },
-  nitro: {
-    experimental: {
-      wasm: true
-    },
-  }
 })
