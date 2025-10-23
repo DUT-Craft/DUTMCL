@@ -2,7 +2,7 @@
   <div class="footer-container">
     <n-layout-footer class="custom-footer" bordered>
       <div style="padding: 12px 24px;">
-        Driven by Cat Girls Club and written by Fox
+        Driven by Bug and written by Fox
       </div>
     </n-layout-footer>
   </div>

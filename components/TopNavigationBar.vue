@@ -122,8 +122,8 @@ import {AiFillHome , AiFillSetting,AiFillHdd ,AiFillAppstore } from 'vue-icons-p
 
 /* 导航按钮悬停效果 */
 .nav-button:hover {
-  /* 悬停时的背景色 */
-  background-color: rgba(255, 255, 255, 0.3);
+  /* 悬停时的背景色：粉红色且透明度30% */
+  background-color: rgba(255, 192, 203, 0.7);
   /* 向上轻微移动，增强交互感 */
   transform: translateY(-2px);
 }

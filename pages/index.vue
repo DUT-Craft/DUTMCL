@@ -6,7 +6,7 @@
       class="full-screen-image"
       src="/back.png"
       preview-disabled
-      object-fit="cover"
+      object-fit="fill"
     />
     <LayoutFooter />
   </div>
@@ -41,11 +41,8 @@ import { NImage } from 'naive-ui'
   width: 100%;
   height: 100%;
   
-  /* 保持图片比例并覆盖整个容器 */
-  object-fit: cover;
-  
-  /* 确保图片在容器中居中显示 */
-  object-position: center;
+  /* 强制拉伸图片以完全填充容器 */
+  object-fit: fill;
   
   /* 添加过渡效果使尺寸变化更平滑 */
   transition: all 0.3s ease;
