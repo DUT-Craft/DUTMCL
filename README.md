@@ -1,75 +1,32 @@
-# Nuxt Minimal Starter
+# 基于NUXT和TAURI开发的DUT猫娘启动器
+向[SJMCL](https://github.com/UNIkeEN/SJMCL?tab=readme-ov-file)致谢
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+注意：运行前请先安装npm和bun和rust相关配置和依赖
 
-## Setup
+使用了[Tauri](https://tauri.studio)   [Nuxt.js](https://nuxtjs.org) [Naïve UI](https://www.naiveui.com/)
 
-Make sure to install dependencies:
-
+## 安装软件包
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
 # bun
 bun install
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+## 启动Nuxt.js开发服务器
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
 # bun
 bun run dev
 ```
-
-## Production
-
-Build the application for production:
+## 构建Nuxt.js项目
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+nuxt generate
 ```
 
-Locally preview production build:
-
+## 启动Tauri开发服务器
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+bun tauri dev
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 构建Tauri项目
+```bash
+bun tauri build
+```
